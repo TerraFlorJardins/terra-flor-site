@@ -19,13 +19,9 @@
       line-height: 1.6;
     }
     header {
-      background: #4caf50;
-      color: #fff;
-      padding: 2rem;
+      background: #ffffff;
+      padding: 1.5rem;
       text-align: center;
-    }
-    header h1 {
-      font-size: 2.5rem;
     }
     nav {
       background: #388e3c;
@@ -73,24 +69,49 @@
       text-decoration: none;
       font-size: 1.2rem;
     }
+    /* Botão flutuante do WhatsApp */
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+      width: 60px;
+      height: 60px;
+      background-color: #25D366;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+    .whatsapp-button:hover {
+      transform: scale(1.1);
+    }
+    .whatsapp-button img {
+      width: 35px;
+      height: 35px;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Terra & Flor Jardinagem e Paisagismo</h1>
-    <p>Transformando espaços com arte e natureza</p>
+    <img src="logo.png" alt="Terra & Flor Logo" style="max-width: 100%; height: auto;" />
   </header>
+
   <nav>
     <a href="#sobre">Sobre</a>
     <a href="#servicos">Serviços</a>
     <a href="#galeria">Galeria</a>
     <a href="#contato">Contato</a>
   </nav>
+
   <main class="container">
     <section id="sobre" class="section">
       <h2>Quem Somos</h2>
       <p>Somos uma empresa de jardinagem e paisagismo em Curitiba com anos de experiência em transformar espaços verdes em ambientes vivos e acolhedores. Realizamos projetos personalizados para residências, comércios e espaços públicos.</p>
     </section>
+
     <section id="servicos" class="section">
       <h2>Serviços</h2>
       <ul>
@@ -103,15 +124,16 @@
         <li>Limpeza de chácaras e terrenos</li>
       </ul>
     </section>
+
     <section id="galeria" class="section">
       <h2>Galeria</h2>
       <div class="gallery">
-        <img src="https://via.placeholder.com/400x300?text=Servi%C3%A7o+1" alt="Serviço 1">
-        <img src="https://via.placeholder.com/400x300?text=Servi%C3%A7o+2" alt="Serviço 2">
-        <img src="https://via.placeholder.com/400x300?text=Servi%C3%A7o+3" alt="Serviço 3">
-        <img src="https://via.placeholder.com/400x300?text=Servi%C3%A7o+4" alt="Serviço 4">
+        <img src="IMG_20231206_171203545_HDR.jpg" alt="Chalé e vegetação nativa">
+        <img src="IMG_20250306_145120.jpg" alt="Jardim com grama aparada e vasos">
+        <img src="IMG_20250318_111923.jpg" alt="Bougainville florido">
       </div>
     </section>
+
     <section id="contato" class="section">
       <h2>Contato</h2>
       <p>📍 Curitiba, PR</p>
@@ -122,8 +144,14 @@
       </div>
     </section>
   </main>
+
   <footer>
     <p>&copy; 2025 Terra & Flor Jardinagem e Paisagismo - Todos os direitos reservados.</p>
   </footer>
+
+  <!-- Botão WhatsApp -->
+  <a href="https://wa.me/5541987673179" target="_blank" class="whatsapp-button" title="Fale conosco no WhatsApp">
+    <img src="https://cdn-icons-png.flaticon.com/512/220/220236.png" alt="WhatsApp" />
+  </a>
 </body>
 </html>
